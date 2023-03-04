@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    background-color: #F2F2F2;
 }
 
 *,
@@ -14,12 +13,12 @@ h2,
 h3,
 h4,
 h5,
-h6.p {
+h6,p {
     margin: 0;
 }
 
 ul,
-ol {
+ol ,p{
     padding: 0;
     margin: 0;
     list-style: none;
@@ -38,11 +37,10 @@ img {
 
 body {
     margin: 0;
-    font-family: 'Barlow';
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1300px;
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
