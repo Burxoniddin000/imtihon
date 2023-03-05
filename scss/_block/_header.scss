@@ -6,6 +6,9 @@ padding-left: 25px;
   padding-top: 20px;
 }
 
+.body-dark, * {
+  color: #fff;
+}
 .header__darc {
   display: flex;
   align-items: center;
@@ -123,3 +126,8 @@ padding-left: 25px;
 }
 
 
+
+#sun{
+  display: none;
+
+}

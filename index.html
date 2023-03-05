@@ -14,13 +14,12 @@
 
 <body>
     <div class="container">
-
         <header class="sitx__hedader">
             <div class="container header__conta">
                 <div class="container header__container">
                     <div class="header__ico">
                         <a href="./index.html">
-                            <img src="./img/icock.svg" alt="lionk">
+                            <img id="icon" src="./img/icock.svg" alt="lionk">
                         </a>
                     </div>
                     <div class="header__input">
@@ -28,8 +27,9 @@
                         <input type="text" id="sarche" placeholder="Search books">
                     </div>
                     <div class="header__darc">
-                        <div>
-                            <img class="header__mode" src="./img/Vector.svg" alt="img">
+                        <div class="darck">
+                            <img class="header__mode" id="mon" src="./img/mon.svg" alt="mon">
+                            <img class="header__mode" id="sun" src="./img/Vector.svg" alt="sun">
                         </div>
                         <div class="logo">
                             <button class=" btn header__logo">Logout</button>
@@ -53,8 +53,8 @@
         </header>
         <main class="main">
             <section class="main__section">
-                <div class="container">
-                    <div>
+                <div class="container main__section__container">
+                    <div class="bookmarks__div">
                         <h3 class="book">
                             Bookmarks
                         </h3>
@@ -63,36 +63,6 @@
                         </p>
                     </div>
                     <ul class="main__section__sitey">
-                        <li class="item">
-                            <div>
-                                <p class="item__text">Python</p>
-                                <p class="item__name">David M. Beazley</p>
-                            </div>
-                            <div>
-                                <img class="img" src="./img/boock.png" alt="boock">
-                                <img class="img" src="./img/delete.png" alt="delit">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div>
-                                <p class="item__text">Java</p>
-                                <p class="item__name">David M. Beazley</p>
-                            </div>
-                            <div>
-                                <img class="img" src="./img/boock.png" alt="boock">
-                                <img class="img" src="./img/delete.png" alt="delit">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div>
-                                <p class="item__text">C++</p>
-                                <p class="item__name">David M. Beazley</p>
-                            </div>
-                            <div>
-                                <img class="img" src="./img/boock.png" alt="boock">
-                                <img class="img" src="./img/delete.png" alt="delit">
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </section>
@@ -106,7 +76,7 @@
         </main>
     </div>
     <template id="product-template">
-        <li class="main__cretElement">
+        <li class="main__cretElement" id="main__cretElement">
             <div class="main__cretElement__img">
                 <img id="book__img" src="./img/boock.png" alt="book">
             </div>
@@ -117,61 +87,75 @@
             </div>
             <div class="main__btn">
                 <div class="main__btn__more">
-                    <button class="main__bookmark">Bookmark</button>
+                    <button class="main__bookmark" id="main__bookmark">Bookmark</button>
                     <button class="main__more btn-primary" id="info__btn" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">More Info</button>
-
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Python<h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="info__img_inner">
-                                <img class="info__img" id="info__img" src="./img/Login.png" alt="boock">
-                            </div>
-                            <div>
-                                <p class="info__taxt" id="info__taxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Veritatis
-                                    magnam ad ea non iure culpa quaerat cumque sequi at unde blanditiis velit, impedit
-                                    eos
-                                    voluptas explicabo fugit laborum eaque nemo.</p>
-                            </div>
-                            <div>
-                                <h2 class="info__inner">
-                                    Author : <span class="info__span" id="span">Jamal Kasper</span>
-                                    <span class="info__span">Author 2</span>
-                                </h2>
-                                <h2 class="info__inner">
-                                    Published : <span class="info__span" id="info__namer">2019</span>
-                                </h2>
-                                <h2 class="info__inner">
-                                    Publishers: <span class="info__span" id="publishers">Hollman</span>
-                                </h2>
-                                <h2 class="info__inner" >
-                                    Categories: <span id="categories" class="info__span">Computers</span>
-                                </h2>
-                                <h2 class="info__inner" id="pages">
-                                    Pages Count: <span id="pages" class="info__span">346</span>
-                                </h2>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
                 <button class="main__read">Read</button>
             </div>
         </li>
     </template>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Python<h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="info__img_inner">
+                    <img class="info__img" id="info__img" src="./img/Login.png" alt="boock">
+                </div>
+                <div class="info__div">
+    
+                    <div>
+                        <p class="info__taxt" id="info__taxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Veritatis
+                            magnam ad ea non iure culpa quaerat cumque sequi at unde blanditiis velit, impedit
+                            eos
+                            voluptas explicabo fugit laborum eaque nemo.</p>
+                    </div>
+                    <div>
+                        <h2 class="info__inner">
+                            Author : <span class="info__span" id="span">Jamal Kasper</span>
+                        </h2>
+                        <h2 class="info__inner info__inner2">
+                            Published : <span class="info__span" id="info__namer">2019</span>
+                        </h2>
+                        <h2 class="info__inner info__inner3">
+                            Publishers: <span class="info__span" id="publishers">Hollman</span>
+                        </h2>
+                        <h2 class="info__inner info__inner4">
+                            Categories: <span id="categories" class="info__span">Computers</span>
+                        </h2>
+                        <h2 class="info__inner info__inner5">
+                            Pages Count: <span id="pages" class="info__span">346</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <template id="bookmar-tempelet">
+        <li class="item">
+            <div>
+                <p class="item__text" id="item__text">Python</p>
+                <p class="item__name" id="item__name">David M. Beazley</p>
+            </div>
+            <div>
+                <img class="img" src="./img/boock.png" alt="boock">
+                <img id="imgen" class="img" src="./img/delete.png" alt="delit">
+            </div>
+        </li>
+    </template>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="./js/findElement.js"></script>
     <script src="./js/radom.js"></script>
     <script src="./js/infoRadom.js"></script>
+    <script src="./js/bookmar.js"></script>
+    <script src="./js/darkMod.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
