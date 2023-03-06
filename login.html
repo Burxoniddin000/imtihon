@@ -17,15 +17,17 @@
     <div class="container__input">
         <div class="input__text">
             <img class="user" src="./img/user.png" alt="user">
-            <input class="input text" type="text" placeholder="Username">
+            <input class="input text" id="text" type="text" placeholder="Username">
         </div>
         <div class="input__password">
             <img class="user" src="./img/lock.png" alt="user">
-            <input class="input password" type="password" placeholder="password">
+            <input class="input password" id="password" type="password" placeholder="password">
         </div>
-        <button class="input__btn">Login</button>
+        <p class="error-message" id="error-message">xato</p>
+        <button class="input__btn" id="submit-btn">Login</button>
     </div>
 </div>
 </body>
-
+<script src="./js/findElement.js"></script>
+<script src="./js/login.js"></script>
 </html>

@@ -24,6 +24,7 @@ const infoInner3 = document.querySelector('.info__inner4')
 const infoInner5 = document.querySelector('.info__inner5')
 let them = 'light';
 
+
 darmod.addEventListener('click', () => {
     if (them === "dark") {
         them = 'light';

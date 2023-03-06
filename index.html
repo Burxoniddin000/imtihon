@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Onlayn kitob dokon</title>
     <link rel="icon" type="image/x-icon" href="./img/book.svg">
 </head>
@@ -37,21 +40,52 @@
                     </div>
                 </div>
                 <hr>
-                <div class="container header__showing">
-                    <div>
-                        <h2 class="header__text">
-                            Showing 18 Result(s)
-                        </h2>
-                    </div>
-                    <div>
-                        <button class="header__Order">
-                            Order by newest
-                        </button>
-                    </div>
+            </div>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img class="swiper-slide-img"
+                            src="./img/desktop-wallpaper-library-high-quality-huge-library.jpg" alt="books"></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/books.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/books2.jpg" alt="books"></div>
+                    <div class="swiper-slide"><img class="swiper-slide-img" src="./img/kitob.jpg" alt="books"></div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+
+            </div>
+
+            <div class="container header__showing">
+                <div>
+                    <h2 class="header__text">
+                        Showing 18 Result(s)
+                    </h2>
+                </div>
+                <div></div>
+
+                <div class="select__div">
+                    <button class="header__Order">
+                        Order by newest
+                    </button>
+                    <select class="input__select" name="cars" id="cars">
+                        <option class="option" value="ALL">ALL</option>
+                        <option class="option" value="Relevance ">Relevance </option>
+                        <option class="option" value="Newest ">Newest </option>
+                    </select>
                 </div>
             </div>
         </header>
         <main class="main">
+
             <section class="main__section">
                 <div class="container main__section__container">
                     <div class="bookmarks__div">
@@ -71,6 +105,10 @@
                     <ul class="cretElement" id="cretElement">
 
                     </ul>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                        </ul>
+                    </nav>
                 </div>
             </section>
         </main>
@@ -96,44 +134,44 @@
         </li>
     </template>
 
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Python<h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Python<h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="info__img_inner">
+                <img class="info__img" id="info__img" src="./img/Login.png" alt="boock">
             </div>
-            <div class="offcanvas-body">
-                <div class="info__img_inner">
-                    <img class="info__img" id="info__img" src="./img/Login.png" alt="boock">
+            <div class="info__div">
+
+                <div>
+                    <p class="info__taxt" id="info__taxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Veritatis
+                        magnam ad ea non iure culpa quaerat cumque sequi at unde blanditiis velit, impedit
+                        eos
+                        voluptas explicabo fugit laborum eaque nemo.</p>
                 </div>
-                <div class="info__div">
-    
-                    <div>
-                        <p class="info__taxt" id="info__taxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Veritatis
-                            magnam ad ea non iure culpa quaerat cumque sequi at unde blanditiis velit, impedit
-                            eos
-                            voluptas explicabo fugit laborum eaque nemo.</p>
-                    </div>
-                    <div>
-                        <h2 class="info__inner">
-                            Author : <span class="info__span" id="span">Jamal Kasper</span>
-                        </h2>
-                        <h2 class="info__inner info__inner2">
-                            Published : <span class="info__span" id="info__namer">2019</span>
-                        </h2>
-                        <h2 class="info__inner info__inner3">
-                            Publishers: <span class="info__span" id="publishers">Hollman</span>
-                        </h2>
-                        <h2 class="info__inner info__inner4">
-                            Categories: <span id="categories" class="info__span">Computers</span>
-                        </h2>
-                        <h2 class="info__inner info__inner5">
-                            Pages Count: <span id="pages" class="info__span">346</span>
-                        </h2>
-                    </div>
+                <div>
+                    <h2 class="info__inner">
+                        Author : <span class="info__span" id="span">Jamal Kasper</span>
+                    </h2>
+                    <h2 class="info__inner info__inner2">
+                        Published : <span class="info__span" id="info__namer">2019</span>
+                    </h2>
+                    <h2 class="info__inner info__inner3">
+                        Publishers: <span class="info__span" id="publishers">Hollman</span>
+                    </h2>
+                    <h2 class="info__inner info__inner4">
+                        Categories: <span id="categories" class="info__span">Computers</span>
+                    </h2>
+                    <h2 class="info__inner info__inner5">
+                        Pages Count: <span id="pages" class="info__span">346</span>
+                    </h2>
                 </div>
             </div>
         </div>
+    </div>
 
     <template id="bookmar-tempelet">
         <li class="item">
@@ -142,7 +180,7 @@
                 <p class="item__name" id="item__name">David M. Beazley</p>
             </div>
             <div>
-                <img class="img" src="./img/boock.png" alt="boock">
+                <img class="img" id="img" src="./img/boock.png" alt="boock">
                 <img id="imgen" class="img" src="./img/delete.png" alt="delit">
             </div>
         </li>
@@ -156,7 +194,9 @@
     <script src="./js/infoRadom.js"></script>
     <script src="./js/bookmar.js"></script>
     <script src="./js/darkMod.js"></script>
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/sivper.js"></script>
+    <script src="./js/selekt.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

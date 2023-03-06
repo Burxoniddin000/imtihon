@@ -267,3 +267,18 @@ color: #0D75FF;
 .bookmarks__div{
   width: 220px;
 }
+
+.pagination{
+ justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+.page-item{
+  font-size: 20px;
+  border-radius: 15px;
+  background: #0D75FF;
+  color: #ffffff;
+  cursor: pointer;
+  }
