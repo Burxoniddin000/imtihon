@@ -15,13 +15,16 @@ function newBook(array) {
         const infoBtn = findElement('#info__btn', newBooks);
         const bookmark = findElement('#main__bookmark', newBooks);
         const mainread = findElement('.main__read', newBooks);
+        const li = findElement('#main__cretElement', newBooks);
         infoBtn.dataset.id = element.id
         bookmark.dataset.id = element.id
 
         elbook.src = element.volumeInfo.imageLinks.thumbnail;
         elname.textContent = element.volumeInfo.title
-        // elafter.textContent = element.volumeInfo.authors[0];
+        elafter.textContent = element.volumeInfo.authors
         elyers.textContent = element.volumeInfo.publishedDate;
+
+
 
         ul.appendChild(newBooks);
         let elImg = document.querySelector('.header__logo')

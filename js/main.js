@@ -32,7 +32,6 @@ fetch('https://www.googleapis.com/books/v1/volumes?q=java&startIndex=0&maxResult
 		products = result;
 	});
 
-let array = []
 
 ul.addEventListener('click', (evt) => {
 	let target = evt.target
@@ -55,14 +54,18 @@ let value = evt.target.value
 fetch( `https://www.googleapis.com/books/v1/volumes?q=${value}&key=` + GOOGLE__API)
 	.then((res) => res.json())
 	.then((data) => {
-		let result = data.items.filter((product) => {
-
-			if (product.id) {
-				return product
-			}
-		})
-		products = result;
+		if(value ==''){
 		newBook(products)
+		console.log('salom');
+		}else{
+			let result = data.items.filter((product) => {
+				if (product.id) {
+					return product
+				}
+			})
+			products = result;
+			newBook(products)
+		}
 	})
 })
 
@@ -74,7 +77,6 @@ fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&orderBy=newest&key
 	.then((res) => res.json())
 	.then((data) => {
 		let result = data.items.filter((product) => {
-
 			if (product.id) {
 				return product
 			}
@@ -83,3 +85,38 @@ fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&orderBy=newest&key
 		newBook(products)
 	})
 })
+
+
+
+ul.addEventListener('click', (evt) => {
+    let target = evt.target
+    if (target.id.includes('main__bookmark')) {
+        const id = target.dataset.id;
+        products.forEach((item) => {
+            if (item.id == id) {
+                let product = arr.find((item) => item.id == id);
+                if (!product) {
+                    arr.push(item);
+                }
+            }
+            bookmarkRadom(arr)
+        })
+    }
+})
+
+
+elul.addEventListener('click', (evt) => {
+    let target = evt.target
+    let arr2 = []
+    if (target.id.includes('imgen')) {
+        const id = target.dataset.id;
+        arr.forEach((elment) => {
+            if (elment.id !== id) {
+                arr2.push(elment)
+            }
+        })
+        arr = arr2
+        bookmarkRadom(arr2)
+    }
+})
+
