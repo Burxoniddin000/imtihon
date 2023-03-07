@@ -19,8 +19,6 @@ function bookmarkRadom(array) {
         img.addEventListener('click', () => {
             window.location.href = `${array.volumeInfo.infoLink}`;
         })
-
-       
     })
 }
 
