@@ -2,7 +2,6 @@ let ul = findElement('#cretElement')
 let eltelplet = findElement('#product-template')
 
 
-
 function newBook(array) {
     ul.textContent = "";
 
