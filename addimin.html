@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onlayn kitob dokon</title>
+    <link rel="icon" type="image/x-icon" href="./img/book.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <main class="mani">
+            <section class="main__input">
+                <div id="form">
+                    <input name="image" id="image" class="type image mt-3" type="text" placeholder="Image" />
+                    <input name="title" id="title" class="type title mt-3" type="text" placeholder="Name" />
+                    <input name="price" id="price" class="type price mt-3" type="text" placeholder="Mualifi" />
+                    <input name="rating" id="rating" class="type rating mt-3" type="number" placeholder="Yil" />
+                </div>
+                <div id="selekit__btn__div">
+                    <button id="submit-btn btn" type="submit" class="btn btn-outline-primary form-control submit mt-3">
+                        Submit
+                    </button>
+                </div>
+            </section>
+
+            <section class="cretelment">
+                <ul class="cretelment__ul">
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <template id="temlet">
+        <li class="cretelment__li" id="cretelment__li">
+            <div class="cretelment__img__div">
+                <img id="cretelment__img" src="./img/Login.png" alt="book">
+                <!-- <input class="edit__input" type="text" placeholder="text"> -->
+            </div>
+            <div class="cretelment__div">
+                <h2 id="cretelment__inner" class="clor cretelment__inner">Python</h2>
+                <p id="cretelment__taxt" class="clor cretelment__taxt">David M. Beazley</p>
+                <p id="cretelment__namber" class="clor cretelment__namber">2009</p>
+            </div>
+            <div class="deli__div">
+                <button class="delit clor" id="delit">Delit</button>
+                <button type="button" class="btn btn-primary  edit clor" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" id="edit">Edit</button>
+            </div>
+        </li>
+    </template>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input class="edit__input" id="edit__img" type="text" placeholder="Img">
+                    <input class="edit__input" id="edit__name" type="text" placeholder="Name">
+                    <input class="edit__input" id="edit__after" type="text" placeholder="After">
+                    <input class="edit__input" id="edit__year" type="number" placeholder="Year">
+                    <button type="button" class="btn btn-secondary edit__submit" data-bs-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="./js/findElement.js"></script>
+        <script src="./js/addimn.js"></script>
+</body>
+
+</html>

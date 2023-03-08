@@ -130,9 +130,10 @@ body {
   padding-left: 20px;
 }
 
-.btn:hover {
+.header__logo {
   background-color: blue;
   color: #ffffff;
+  border-radius: 10px;
 }
 
 .header__showing {
@@ -1165,4 +1166,180 @@ body {
 .user {
   width: 20px;
   height: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.main__input {
+  text-align: center;
+}
+
+.type {
+  width: 80%;
+  height: 40px;
+  border-color: rgb(170, 163, 163);
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+
+.btn {
+  width: 80%;
+  margin: 0 auto;
+  height: 40px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.select {
+  width: 80%;
+  color: black;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 15px;
+  outline: none;
+  border-color: black;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+#optin {
+  color: black;
+}
+
+.btn {
+  background: blue;
+}
+
+#selekit__btn__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cretelment__img__div {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: bisque;
+  padding: 10px;
+}
+
+#cretelment__img {
+  border-radius: 10px;
+}
+
+.cretelment__li {
+  text-align: center;
+  width: 350px;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 0 5px 5px rgb(187, 180, 180);
+  margin-top: 25px;
+}
+
+.clor {
+  color: black;
+}
+
+.cretelment__ul {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.delit {
+  background-color: red;
+  border: none;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 80px;
+  color: #fff;
+}
+
+.edit {
+  background-color: blue;
+  border: none;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 80px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.deli__div {
+  margin: 15px 0;
+}
+
+.cretelment__namber {
+  font-size: 18px;
+  margin-top: 16px;
+  opacity: 0.8;
+}
+
+.cretelment__taxt {
+  font-size: 20px;
+  margin-top: 16px;
+  opacity: 0.9;
+}
+
+.cretelment__inner {
+  margin-top: 16px;
+}
+
+.deli__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.edit__input {
+  width: 450px;
+  border: none;
+  outline: none;
+  background-color: rgb(94, 87, 87);
+  border-radius: 9px;
+  height: 40px;
+  font-size: 17px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit__submit {
+  background-color: blue;
+  border: none;
+  outline: none;
+  width: 450px;
+  border-radius: 9px;
+  height: 40px;
+  font-size: 17px;
+  color: #fff;
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */

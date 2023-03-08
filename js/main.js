@@ -19,6 +19,12 @@ if (!token) {
 	window.location.href = './login.html'
 }
 
+logo.addEventListener('click', ()=>{
+	if(logo.textContent =='Chiqish'){
+localStorage.removeItem('token');
+	}
+})
+
 
 
 sarche.addEventListener('input', (evt) => {
