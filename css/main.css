@@ -1143,6 +1143,20 @@ body {
   .section2__div {
     padding: 0;
   }
+  .input__select {
+    outline: none;
+    color: #000;
+    border: none;
+    color: #ffffff;
+    height: 22px;
+    background: inherit;
+  }
+  .header__showing {
+    gap: 0;
+  }
+  .header__text {
+    padding: 0;
+  }
 }
 .body {
   background-image: url(../../img/Login.png);

@@ -580,7 +580,7 @@
     height: 27px;
     overflow: auto;
   }
-  .section2__div{
+  .section2__div {
     padding: 0;
   }
   .main__bookmark {
@@ -632,7 +632,7 @@
     font-size: 13px;
   }
 
-  .page-item{
+  .page-item {
     text-align: center;
     width: 20px;
     border-radius: none;
@@ -643,8 +643,8 @@
     color: #000000;
   }
 
-  .pagination{
-    margin:  0;
+  .pagination {
+    margin: 0;
     padding: 0;
     margin-bottom: 30px;
     margin-top: 20px;
@@ -652,9 +652,8 @@
   }
 }
 
-
 @media screen and (max-width: 400px) {
-  .page-item{
+  .page-item {
     text-align: center;
     width: 15px;
     border-radius: none;
@@ -665,15 +664,30 @@
     color: #000000;
   }
 
-  .pagination{
-    margin:  0;
+  .pagination {
+    margin: 0;
     padding: 0;
     margin-bottom: 30px;
     margin-top: 20px;
     gap: 0;
   }
 
-  .section2__div{
+  .section2__div {
+    padding: 0;
+  }
+  .input__select {
+    outline: none;
+    color: #000;
+    border: none;
+    color: #ffffff;
+    height: 22px;
+    background: inherit;
+  }
+  .header__showing{
+    gap: 0;
+  }
+
+  .header__text{
     padding: 0;
   }
 }
