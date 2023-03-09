@@ -13,7 +13,7 @@ let edityear = document.querySelector('#edit__year')
 let btn = document.querySelector('.edit__submit')
 let them = 'light';
 
-let logo = document.querySelector('.header__logo')
+let logo = document.querySelector('.header__addimi')
 
 
 let token = localStorage.token
