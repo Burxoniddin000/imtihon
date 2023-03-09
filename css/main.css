@@ -1355,4 +1355,10 @@ body {
   font-size: 17px;
   color: #fff;
   padding-left: 10px;
+}
+
+.admin__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
