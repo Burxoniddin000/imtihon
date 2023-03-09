@@ -108,6 +108,19 @@ body {
   width: 100%;
 }
 
+.hero_likn {
+  margin-top: 30px;
+  background-color: blue;
+  box-shadow: 0 0 10px 5px #fff;
+  border-radius: 9px;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header__logo {
   width: 99px;
   height: 40px;

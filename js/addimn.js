@@ -13,22 +13,25 @@ let edityear = document.querySelector('#edit__year')
 let btn = document.querySelector('.edit__submit')
 let them = 'light';
 
+let logo = document.querySelector('.header__logo')
+
+let token = localStorage.token
 
 
-let arr = []
+if (token) {
+	logo.textContent = 'Chiqish'
+}
 
+if (!token) {
+	window.location.href = './login.html'
+}
 
-fetch('https://63fde1a019f41bb9f655e570.mockapi.io/projets')
-    .then((res) => res.json())
-    .then((data) => {
-        let result = data.filter((product) => {
-            if (product) {
-                return product
-            }
-        })
-        arr = result;
+logo.addEventListener('click', ()=>{
+	if(logo.textContent =='Chiqish'){
+localStorage.removeItem('token');
+	}
+})
 
-    })
 
 fetch(`https://63fde1a019f41bb9f655e570.mockapi.io/projets`)
     .then((res) => res.json())
